@@ -27,10 +27,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['username'] = $username;
         header('Location: home.php');
     } else {
-        echo '<div class="alert alert-danger" role="alert">Invalid username or password!</div>';
+        // error message pop-up box
+        echo "<script>
+          alert('Incorrect email or password. Please try again.');
+          window.location.href='index.php';
+        </script>";
     }
-}
 
 // Closing MySQL connection
-$conn->close();
-
+    $conn->close();
+}
