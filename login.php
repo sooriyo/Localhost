@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result->num_rows > 0) {
         session_start();
         $_SESSION['username'] = $username;
-        header('Location: home.php');
+        header('Location: Dashboard.php');
     } else {
         // error message pop-up box
         echo "<script>

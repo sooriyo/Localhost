@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 if (!isset($_SESSION['username'])) {
@@ -17,7 +18,7 @@ echo "";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="navigation.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title></title>
 
@@ -29,17 +30,17 @@ echo "";
         <div class="image-text">
                 <span class="image">
                     <i class='bx bx-transfer icon'></i>
-                  <!--  <img src="logo.png" alt=""-->
+                    <!--  <img src="logo.png" alt=""-->
                 </span>
 
             <div class="text logo-text">
                 <span class="name">Welcome</span>
 
-               <!-- <span class="profession">Cylon Trains</span> -->
+                <!-- <span class="profession">Cylon Trains</span> -->
             </div>
         </div>
 
-     <!--   <i class='bx bx-chevron-right toggle'></i> -->
+        <!--   <i class='bx bx-chevron-right toggle'></i> -->
     </header>
 
     <div class="menu-bar">
@@ -53,7 +54,7 @@ echo "";
                 </li>
 
                 <li class="nav-link">
-                    <a href="#">
+                    <a href="trains.php">
                         <i class='bx bx-train icon'></i>
                         <span class="text nav-text">Trains</span>
                     </a>
@@ -98,9 +99,9 @@ echo "";
                 </a>
             </li>
 
-                <div class="toggle-switch">
-                    <span class="switch"></span>
-                </div>
+            <div class="toggle-switch">
+                <span class="switch"></span>
+            </div>
 
         </div>
     </div>
@@ -108,7 +109,7 @@ echo "";
 </nav>
 
 <section class="home">
-  <!--  <div class="text">Dashboard Sidebar</div> -->
+    <!--  <div class="text">Dashboard Sidebar</div> -->
 </section>
 
 <script>
@@ -120,10 +121,10 @@ echo "";
 
   <!--
       toggle.addEventListener("click", () => {
-        sidebar.classList.toggle("close");
+          sidebar.classList.toggle("close");
 
 
-    });
+      });
 </script>
 
 </body>
